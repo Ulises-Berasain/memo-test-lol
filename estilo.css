@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+}
+
+.fila-juego{
+    height: 25vh;
+    background-color:goldenrod;
+}
+
+.columna-juego{
+    border: solid black;
+}
+
+.cuadro {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#reverso-cuadro{
+    background-image: url(img/lol-logo.jpg);
+    background-size: 350px;
+    background-position: 45% 75%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.lulu{
+    background-image: url(img/lulu.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sett{
+    background-image: url(img/sett.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.pyke{
+    background-image: url(img/pyke.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.senna{
+    background-image: url(img/senna.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.miss-fortune{
+    background-image: url(img/miss-fortune.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.xayah{
+    background-image: url(img/xayah.jpg);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.completo{
+    background-image: url(img/challenger.png);
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#fin-juego{
+    display: none;
+}
+
+#tablero{
+    background: rgb(0, 255, 255);
+}
+
+#perdiste{
+    display: none;
+}
+
+#titulo-victoria{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80px;
+}
+
+#titulo-derrota{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80px;
+}
+
+#mensaje-victoria{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+#mensaje-derrota{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+#imagen-victoria{
+    display: block;
+    margin: auto;
+}
+
+#imagen-derrota{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 450px;
+    height: 450px;
+}
+
+#cuenta-regresiva{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:goldenrod;
+    border: 5px solid black;
+    width: 140px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#boton-reseteo{
+    margin-left: 700px;
+    margin-right: 700px;
+    box-shadow: 4px 4px 10px rgb(229, 200, 13);
+    font-weight: 700;
+    border: solid black;
+    transition : transform 0.5s ease;
+    text-shadow: 2px 2px 5px gray;
+}
+
+#boton-reseteo:hover{
+    transform: scale(1.1);
+}
