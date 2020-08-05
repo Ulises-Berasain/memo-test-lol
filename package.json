@@ -1,0 +1,30 @@
+{
+  "name": "memo-test-lol",
+  "version": "1.0.0",
+  "description": "Juego memo test de LoL",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^1.9.1",
+    "node": "^14.5.0",
+    "package.json": "^2.0.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "cypress": "^4.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dev": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulises-Berasain/memo-test-lol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ulises-Berasain/memo-test-lol/issues"
+  },
+  "homepage": "https://github.com/Ulises-Berasain/memo-test-lol#readme"
+}
