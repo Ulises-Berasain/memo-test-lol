@@ -112,6 +112,8 @@ body, html {
 #imagen-victoria{
     display: block;
     margin: auto;
+    position: relative;
+    top: 15px;
 }
 
 #imagen-derrota{
@@ -138,7 +140,17 @@ body, html {
     font-weight: 900;
 }
 
-#boton-reseteo{
+#boton-reseteo-derrota{
+    margin-left: 700px;
+    margin-right: 700px;
+    box-shadow: 4px 4px 10px rgb(229, 200, 13);
+    font-weight: 700;
+    border: solid black;
+    transition : transform 0.5s ease;
+    text-shadow: 2px 2px 5px gray;
+}
+
+#boton-reseteo-victoria{
     margin-left: 700px;
     margin-right: 700px;
     box-shadow: 4px 4px 10px rgb(229, 200, 13);
@@ -150,4 +162,25 @@ body, html {
 
 #boton-reseteo:hover{
     transform: scale(1.1);
+}
+
+.redes{
+    border: 3px solid black;
+    float: left;
+    display: flex;
+    background-color: goldenrod;
+    margin-left: -168px;
+    margin-top: 200px;
+    margin-bottom: -200px;
+    width: 215px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales{
+    margin-left: 0px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 15px;
 }

@@ -13,29 +13,54 @@
     <div class="alert alert-success" role="alert" id="fin-juego">
         <h4 class="alert-heading" id="titulo-victoria">Bien hecho!</h4>
         <p id="mensaje-victoria">Tardaste <strong></strong> turnos en terminar!</p>
+        <button type="reset" class="btn btn-warning" id="boton-reseteo-victoria">Volver a empezar</button>
         <img src="img/victoria.jpg" id="imagen-victoria">
     </div>
 
     <div class="alert alert-danger h-100" role="alert" id="perdiste">
         <h4 class="alert-heading" id="titulo-derrota">Perdiste!</h4>
         <p id="mensaje-derrota">Quieres volver a empezar?</p>
-        <button type="reset" class="btn btn-warning" id="boton-reseteo">Volver a empezar</button>
+        <button type="reset" class="btn btn-warning" id="boton-reseteo-derrota">Volver a empezar</button>
         <img src="img/derrota.jpg" id="imagen-derrota">
     </div>
 
-    <div class id="tablero"><span id="cuenta-regresiva"></span>
-     <div class="container">
-        <div class="row fila-juego">
-          <div class="col columna-juego">
+    <div class id="tablero">
+        <span id="cuenta-regresiva"></span>
+
+        <div class="redes">
+            <ul class="redes-sociales" >
+                <li class="twitter">
+                    <span>Twitter:</span>
+                    <a href="https://twitter.com/UBerasain" class="badge badge-primary">@UBerasain</a>
+                </li>
+                <li class="facebook">
+                    <span>Facebook:</span>
+                    <a href="https://www.facebook.com/Berasain.Uliii/" class="badge badge-primary" target="_blank" rel="noopener noreferrer">Ulises Berasain</a>
+                </li>
+                <li class="instagram">
+                    <span>Instagram:</span>
+                    <a href="https://www.instagram.com/uliuli77/" class="badge badge-primary" rel="noopener noreferrer">Ulises Berasain</a>
+                </li>
+                <li class="email">
+                    <span>e-mail:</span>
+                    <a href="mailto:uli_cuervo_79@hotmail.com" class="badge badge-primary" target="_blank" rel="noopener noreferrer">uli_cuervo_79@hotmail.com</a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="container">
+         <div class="row fila-juego">
+            <div class="col columna-juego">
                 <div class="cuadro h-100" id= "reverso-cuadro"></div>
-          </div>
-          <div class="col columna-juego">
-                <div class="cuadro h-100" id= "reverso-cuadro"></div>
-          </div>
-          <div class="col columna-juego">
-                <div class="cuadro h-100" id= "reverso-cuadro"></div>
-          </div>
             </div>
+            <div class="col columna-juego">
+                <div class="cuadro h-100" id= "reverso-cuadro"></div>
+            </div>
+            <div class="col columna-juego">
+                <div class="cuadro h-100" id= "reverso-cuadro"></div>
+            </div>
+         </div>
          <div class="row fila-juego">
             <div class="col columna-juego">
                 <div class="cuadro h-100" id= "reverso-cuadro"></div>
@@ -69,8 +94,10 @@
                 <div class="cuadro h-100" id= "reverso-cuadro"></div>
             </div>
           </div>
-        </div>
-    </div>
+
+            
+        
+        </div> 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -74,16 +74,17 @@ function ocultarCuadro($cuadro) {
 function eliminarCuadro($cuadro) {
     setTimeout(function() {
       $cuadro.parentElement.classList.add('completo');
-      $cuadro.remove();
+      $cuadro.style.display = 'none';
       evaluarFinDeJuego();
     }, 500);
 }
 
 function evaluarFinDeJuego() {
-    if (document.querySelectorAll('.cuadro').length === 0) {
+    if (document.querySelectorAll('.completo').length === 12) {
       $tablero.style.display = 'none';
       $mensajeFinJuego.querySelector('strong').textContent = turnos.toString();
       $mensajeFinJuego.style.display = 'block';
+      $cuadros.classLists.remove();
       return tiempoTotal = function(){};
     }
 }
@@ -92,7 +93,7 @@ configurarJuego();
 
 let tiempoTotal = 30;
 
-window.onload = actualizarTemporizador();
+actualizarTemporizador();
 
 function actualizarTemporizador() {
   document.getElementById('cuenta-regresiva').innerHTML = tiempoTotal;
@@ -105,16 +106,26 @@ function actualizarTemporizador() {
   }
 }
 
-document.querySelectorAll("#boton-reseteo").onclick = function(event){
+document.querySelectorAll("#boton-reseteo-derrota")[0].onclick = function(event){
+  event.preventDefault();
+  resetearJuego();
+}
+
+document.querySelectorAll("#boton-reseteo-victoria")[0].onclick = function(event){
   event.preventDefault();
   resetearJuego();
 }
 
 
+function recuperarCuadro($cuadro) {
+  setTimeout(function() {
+    $cuadro.parentElement.classList.remove('completo');
+    $cuadro.style.display = 'block';
+    evaluarFinDeJuego();
+  }, 500);
+}
+
+
 function resetearJuego(){
-  window.onload = actualizarTemporizador();
-  configurarJuego()
-  $mensajePerdiste.style.display = 'none';
-  $tablero.style.display = 'block';
-  return tiempoTotal = 60;
+  location.reload();
 }
