@@ -84,7 +84,6 @@ function evaluarFinDeJuego() {
       $tablero.style.display = 'none';
       $mensajeFinJuego.querySelector('strong').textContent = turnos.toString();
       $mensajeFinJuego.style.display = 'block';
-      $cuadros.classLists.remove();
       return tiempoTotal = function(){};
     }
 }
@@ -97,34 +96,24 @@ actualizarTemporizador();
 
 function actualizarTemporizador() {
   document.getElementById('cuenta-regresiva').innerHTML = tiempoTotal;
-  if(tiempoTotal==0){
+  if(tiempoTotal===0){
     $tablero.style.display = 'none';
     $mensajePerdiste.style.display = 'block';
   }else{
     tiempoTotal-=1;
-    setTimeout("actualizarTemporizador()",1000);
+    setTimeout(actualizarTemporizador,1000);
   }
 }
 
-document.querySelectorAll("#boton-reseteo-derrota")[0].onclick = function(event){
+document.querySelector("#boton-reseteo-derrota").onclick = function(event){
   event.preventDefault();
   resetearJuego();
 }
 
-document.querySelectorAll("#boton-reseteo-victoria")[0].onclick = function(event){
+document.querySelector("#boton-reseteo-victoria").onclick = function(event){
   event.preventDefault();
   resetearJuego();
 }
-
-
-function recuperarCuadro($cuadro) {
-  setTimeout(function() {
-    $cuadro.parentElement.classList.remove('completo');
-    $cuadro.style.display = 'block';
-    evaluarFinDeJuego();
-  }, 500);
-}
-
 
 function resetearJuego(){
   location.reload();

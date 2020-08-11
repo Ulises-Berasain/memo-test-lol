@@ -160,7 +160,11 @@ body, html {
     text-shadow: 2px 2px 5px gray;
 }
 
-#boton-reseteo:hover{
+#boton-reseteo-victoria:hover{
+    transform: scale(1.1);
+}
+
+#boton-reseteo-derrota:hover{
     transform: scale(1.1);
 }
 
