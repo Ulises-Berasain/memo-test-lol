@@ -83,7 +83,7 @@ function evaluarFinDeJuego() {
     if (document.querySelectorAll('.completo').length === 12) {
       $tablero.style.display = 'none';
       $mensajeFinJuego.querySelector('strong').textContent = turnos.toString();
-      $mensajeFinJuego.style.display = 'block';
+      $mensajeFinJuego.style.display = 'grid';
       return tiempoTotal = function(){};
     }
 }
@@ -98,7 +98,7 @@ function actualizarTemporizador() {
   document.getElementById('cuenta-regresiva').innerHTML = tiempoTotal;
   if(tiempoTotal===0){
     $tablero.style.display = 'none';
-    $mensajePerdiste.style.display = 'block';
+    $mensajePerdiste.style.display = 'grid';
   }else{
     tiempoTotal-=1;
     setTimeout(actualizarTemporizador,1000);
